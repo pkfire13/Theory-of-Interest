@@ -4,7 +4,95 @@
 \usepackage{actuarialangle}
 \begin{document}
 	
-\title{Ch1. and Ch2 Concepts and Definitions}
+\title{Ch1 and Ch2 Concepts and Definitions}
 \author{Paul Kim}
 \date{\today}
 \maketitle
+
+\section{CH1}
+\subsection{Effective Interest Rate and Discount Rate}
+Definitions
+\begin{enumerate}
+	\item amount of interests from $X_1= (X_2 - X_1)$ 
+	\item effective interest rate for time $[t_1, t_2]$ = $i_{[t_1,t_2]}$ = $\frac{X_2 - X_1}{X_1}$ 
+	\item amount of discount from X$_2 = (X_2 - X_1)$ 
+	\item effective discount rate for time $[t_1, t_2]$ = $d_{[t_1,t_2]}$ = $\frac{X_2 - X_1}{X_2}$ 
+\end{enumerate}
+$(1+i)(1-d) = 1$ for compound interest
+\subsection{Accumulation Functions}
+Definitions
+\begin{enumerate}
+	\item amount function: $A_K(t)$ for principal K dollars
+	\item accumulation function $a(t)$ 
+\end{enumerate}
+note: $A_K(t) = Ka(t)$
+\begin{enumerate}
+	\item simple interest accumulation function at rate s: $a(t) = (1+st)$
+	\item compound interest accumulation function at rate i: $a(t) = (1+i)^t$
+	\item simple discount accumulation function at rate d: $a(t) = \frac{1}{(1-dt)}$
+	\item compound discount accumulation function at rate d: $a(t) = \frac{1}{(1-d)^t}$
+\end{enumerate}
+
+n-th time period: n-1,n
+
+\subsection{Discount Function, Discount Factor, PV, NPV}
+Definitions
+\begin{enumerate}
+	\item discount function: $v(t) = \frac{1}{a(t)}$
+	\item discount factor: $v = \frac{1}{1+i}$
+	\item PV = present value = value at time 0
+	\item NPV = net present value 
+\end{enumerate}
+the accumulated value of X (given at t1) at t2 = Xv(t1)a(t2)
+
+\subsection{Nominal Interest, Nominal Discount}
+
+\begin{enumerate}
+	\item nominal interest rate convertible m times per year = $i^{(m)}$
+	\item effective m-th interest rate = $i^{(m)}/m$
+\end{enumerate}
+\begin{enumerate}
+	\item nominal discount rate convertible m times per year = $d^{(m)}$
+	\item effective m-th discount rate = $d^{(m)}/m$
+\end{enumerate}
+time rates
+\begin{enumerate}
+	\item annually = m = 1
+	\item semiannually = m =2
+	\item quarterly = m = 4
+	\item monthly = m = 12
+\end{enumerate}
+biannual = every two years; m = 1/2
+"convertible, payable or compounded"
+converting interest rate
+\begin{align}
+	(1+i_{annual}) = (1+i_{m})^{m} \nonumber
+\end{align}
+
+\subsection{Constant force of interest and force of interest function}
+\begin{enumerate}
+	\item \#\% constant force of interest ($\delta = \#\%$) = $i = e^{\delta} - 1$
+	\item force of interest is constant, grows at a rate of $\delta$ compounded continuously
+	\item compounded continuously at a rate of $\delta$; a(t) = $e^{\delta t}$
+\end{enumerate}
+\begin{enumerate}
+	\item force of interest function: $\delta_t = \frac{a'(t)}{a(t)} = \frac{d}{dt}(ln*a(t))$
+\end{enumerate}
+
+\subsection{Inflation}
+\begin{enumerate}
+	\item inflation adjusted interest rate = j = purchase power percentage = real interest rate 
+	\item non-inflation adjusted interest rate; stated interest rate = i
+	\item inflation rate = r 
+\end{enumerate}
+\begin{align}
+	1 + j_{[t_1,t_2]} = \frac{1 + i_{[t_1, t_2]}}{1 + r_{[t_1,t_2]}} \nonumber
+\end{align}
+
+\section{CH2}
+\subsection{Yield and Time-Weighted Yield}
+\begin{enumerate}
+	\item yield rate; internal rate of return; dollar-weighted yield rate
+	\item time-weighted yield
+\end{enumerate}
+\end{document}
