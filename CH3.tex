@@ -22,19 +22,98 @@
 	\end{enumerate}
 
 	\item due = beginning of each payment period
-	\item a with double dot
+	\begin{enumerate}
+		\item $\ddot{a}_{\angl{n}i}$ and $\ddot{s}_{\angl{n}i}$
+		\item "BEGIN"
+	\end{enumerate}
+
 \end{enumerate}
+\begin{tikzpicture}
+	% draw horizontal line
+	\draw (0,0) -- (12,0);
+	
+	%draw vertical lines
+	\foreach \x in {0,4,8,12}
+	\draw (\x cm, 3pt) -- (\x cm, -3pt);
+	
+	%draw nodes
+	
+	\draw (0,0) node[below=3pt] {$a_{\angl{n}i}$} node[above=3pt] {t=0};
+	
+	\draw (4,0) node[below=3pt] {PMT \#1} node[below=18pt] {$\ddot{a}_{\angl{n}i}$} node[above=3pt] {1};
+	
+	\draw (8,0) node[below=3pt] {PMT \#2} node[below=18pt] {$s_{\angl{n}i}$} node[above=3pt] {2};
+	
+	\draw (12,0) node[below=3pt] {$\ddot{s}_{\angl{n}i}$} node[above=3pt] {3};
+\end{tikzpicture}
 
 \subsection{loans with sightly reduced final payment}
 \begin{enumerate}
 	\item calculate for pmt
 	\item recalculate pv with pmt
-	\item if pv is higher than target; than 
+	\item if the pv is greater than loan value , go to 5
+	\item if the pv is less than loan value, round up the pmt
+	\item calculate the value of loan at the end period
+	\item calculate the value of the annuity at the end of the annuity (s)
+	\item subtract with \#6 and \#5 in that order (6 should be higher now)
+	\item subtract the delta with the pmt and that's your last reduced pmt
 \end{enumerate}
-\subsection{perpetuities}
+\subsection{perpetuities and dividend model}
 \begin{align}
 	a_{\angl{\infty}i} = \frac{1}{i} \nonumber \\
 	 \text{double dot} a_{\angl{\infty}i} = \frac{1}{d} \nonumber
 \end{align}
+\begin{enumerate}
+	\item 
+\end{enumerate}
+
+\subsection{Outstanding Loan Balance}
+\begin{enumerate}
+	\item $OLB_k$ = outstanding loan balance right after the k-th pmt
+	\item prospective: (total PV value of all remaining pmts)
+	\item retrospective: (Value of the loan at time k) - (total PV value of payments made)
+\end{enumerate}
+\subsection{Non-leveled Annuities}
+\begin{enumerate}
+	\item ?
+\end{enumerate}
+
+\subsection{Annuities with Geometric progression pmts}
+\begin{align}
+	a + ar + ar^2 + ... + ar^{n-1} = a \frac{1-r^n}{1 - r} \nonumber \\
+	a + ar + ar^2 + ... = a \frac{1}{1-r} \nonumber
+\end{align}
+
+\subsection{with Arithmetic progression pmts}
+P, P+Q, P+2Q, ... P+(n-1)Q where P is the pmt \\
+v = $\frac{1}{1+i}$ 
+\begin{align}
+	(I_{P,Q}a)_{\angl{n}i} = Pa_{\angl{n}i} + \frac{Q}{i}(a_{\angl{n}i} - nv^n) \nonumber \\	
+	(I_{P,Q}s)_{\angl{n}i} = Ps_{\angl{n}i} + \frac{Q}{i}(s_{\angl{n}i} - n) \nonumber \\
+	(I_{P,Q}\ddot{a})_{\angl{n}i} = P\ddot{a}_{\angl{n}i} + \frac{Q}{i}(a_{\angl{n}i} - nv^n) \nonumber \\	
+	(I_{P,Q}\ddot{s})_{\angl{n}i} = P\ddot{s}_{\angl{n}i} + \frac{Q}{i}(s_{\angl{n}i} - n) \nonumber 
+\end{align}
+\begin{align}
+	(I_{P,Q}a)_{\angl{\infty}i} = \frac{P}{i} + \frac{Q}{i^2} \nonumber \\		
+	(I_{P,Q}\ddot{a})_{\angl{\infty}i} = \frac{P}{d} + \frac{Q}{id} \nonumber
+\end{align}
+
+\subsection{Annuity Paid Continuously}
+\begin{enumerate}
+	\item value at t0 of the level annuity with continuous payment to t = n, at a rate of 1 for each period of length = $\int_{0}^{n} v dt$
+\end{enumerate}
+if $a(t) = (1+i)^t$
+\begin{align}
+	\overline{a}_{\angl{n}i} = \frac{1-v^n}{\delta} = \frac{1-v^n}{ln(1+i)} \nonumber \\
+	\overline{s}_{\angl{n}i} = \frac{(1+i)^n - 1}{\delta} = \frac{(1+i)^n - 1}{ln(1+i)} \nonumber
+\end{align}
+\begin{enumerate}
+	\item annuity paid continuously at a rate of f(t)
+	\item amount paid during time [a,b] = $\int_{a}^{b} f(t)dt$
+	\item amount paid during period [t, t+dt] = f(t)dt
+	\item value at t0 = $\int_{0}^{n}v(t)f(t)dt$
+	\item "annuity paid continuously at constant rate of 1": f(t) = 1
+	\item "interest is paid continuously at a rate of $\delta$": a(t) = $e^{\delta t }$
+\end{enumerate}
 
 \end{document}
