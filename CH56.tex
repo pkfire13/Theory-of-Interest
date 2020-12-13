@@ -10,7 +10,27 @@
 \maketitle
 
 \section{CH5}
+\subsection{Amortized loan}
+\begin{enumerate}
+	\item amortized: a portion of the payment goes toward paying the interest that accrued since the previous payment, then what is left of the payment after paying the interest goes toward lowering the balance
+	\item amount of interest in kth payment: (effective interest rate for k-1 pmt)*$OLB_k$
+\end{enumerate}
+\begin{align}
+	\text{amount of interest in kth pmt} = \text{(effec. int. rate in k-1 pmt)}(OLB_{k-1}) \nonumber \\
+	\text{amt of principal in kth pmt} = \text{(value of kth pmt) - (amt of interest at kth pmt)} \nonumber \\
+	OLB_k = OLB_{k-1} - \text{(amt of principal in kth pmt)} \nonumber
+\end{align}
 
+\begin{align}
+	\text{amt of principal in kth pmt} = Qv^{n-k+1} \nonumber \\
+	\text{total principal amt for kth to nth pmt} = OLB_k - OLB_n \nonumber
+\end{align}
+
+\begin{align}
+	B_k = OLB_k \nonumber \\
+	i = \text{effec. int rate period k-1 to k} \nonumber \\
+	\text{interest due in kth pmt} = iB_{k-1} \nonumber 
+\end{align}
 
 
 \section{CH6}
@@ -26,13 +46,56 @@
 	
 \end{enumerate}
 \begin{enumerate}
-	\item per-value bond: $C =F$
+	\item per-value bond: $C = F$
 	\item zero-coupon bond: bond is repaid with a single payment at the end of the term with a redemption payment 
 \end{enumerate}
 \begin{align}
 	\text{price of the bond} = P = (Fr)a_{\angl{n}i} + C(1+i)^{-n} \nonumber \\
 	i = \text{effective yield per coupon period} \nonumber \\
-	n = \text{number of coupon periods}
+	n = \text{number of coupon periods} \nonumber
 \end{align}
+\begin{enumerate}
+	\item Bond is sold at premium: P > C; P is greater
+	\begin{enumerate}
+		\item amount of premium = P - C
+	\end{enumerate}
+	\item Bond is sold at discount: P < C; P is lesser 
+	\begin{enumerate}
+		\item amount of discount = C - P
+	\end{enumerate}
+\end{enumerate}
+\subsection{Premium-discount formula}
+\begin{align}
+	P = C(g-j)a_\angl{n}j + C \nonumber \\
+	Cg = Fr = \text{coupon amt} \nonumber
+\end{align}
+
+\subsection{bond amortization schedule}
+n = total coupons; t = time for the remaining coupons
+\begin{align}
+	OLB_t = B_t = Fra_{\angl{n-t}j} + Cv^{n-t}_j \text{(book value at times t)}\nonumber \\
+	I_t = jB_{t-1} = \text{interest for tth coupon} \nonumber \\
+	P_t = B_{t-1} - B_t = \text{principal for tth coupon}  = C(g-j)v^{n-t+1}_j \nonumber \\
+	B_0 = P \nonumber \\
+	B_n = C \nonumber \\
+	I_t + P_t = \text{coupon amt} \nonumber
+\end{align}
+\begin{align}
+	\text{amount for accumulation of discount in the tth coupon} = \mid P_t \mid \nonumber
+\end{align}
+
+\subsection{Callable Bonds}
+\begin{enumerate}
+	\item if bond is sold at discount, then earlier call dates give higher yield
+	\item if bond is sold at premium, then earlier call dates give lower yield 
+	\begin{enumerate}
+		\item since this gives lower yield, then bond issuer should give additional amt paid at call date called call premium
+	\item level redemption value: doesn't change no matter when the bond is called 
+	\end{enumerate}
+\end{enumerate}
+\begin{enumerate}
+	\item if the bond is called before maturity date then bond PV = P = fr... + (C + call premium)vjn
+\end{enumerate}
+
 
 \end{document}

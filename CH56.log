@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.7)  11 DEC 2020 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.7)  12 DEC 2020 01:12
 entering extended mode
-**./CH3.tex
-(CH3.tex
+**./CH56.tex
+(CH56.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-09-03> (E:\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
@@ -392,8 +392,8 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count275
 \l__pdf_internal_box=\box58
-) (CH3.aux)
-\openout1 = `CH3.aux'.
+) (CH56.aux)
+\openout1 = `CH56.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -428,28 +428,32 @@ ABD: EveryShipout initializing macros
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-) [1
+)
+Overfull \hbox (18.51239pt too wide) detected at line 22
+[]
+ []
 
-{C:/Users/Paul/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3] [4] (CH3
-.aux) ) 
+[1
+
+{C:/Users/Paul/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] [3]
+(CH56.aux) ) 
 Here is how much of TeX's memory you used:
- 12287 strings out of 481199
- 242535 string characters out of 2921909
- 472888 words of memory out of 3000000
- 27681 multiletter control sequences out of 15000+200000
+ 12240 strings out of 481199
+ 241365 string characters out of 2921909
+ 470890 words of memory out of 3000000
+ 27634 multiletter control sequences out of 15000+200000
  541074 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,19n,60p,414b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
-pfb>
-Output written on CH3.pdf (4 pages, 106327 bytes).
+ 60i,19n,60p,415b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi8.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr17.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><E:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on CH56.pdf (3 pages, 92399 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -61,7 +61,7 @@
 \subsection{perpetuities and dividend model}
 \begin{align}
 	a_{\angl{\infty}i} = \frac{1}{i} \nonumber \\
-	 \text{double dot} a_{\angl{\infty}i} = \frac{1}{d} \nonumber
+	 \ddot{a}_{\angl{\infty}i} = \frac{1}{d} \nonumber
 \end{align}
 \begin{enumerate}
 	\item 
@@ -70,8 +70,14 @@
 \subsection{Outstanding Loan Balance}
 \begin{enumerate}
 	\item $OLB_k$ = outstanding loan balance right after the k-th pmt
+	\begin{enumerate}
+		\item Q$a_{\angl{k}i}$
+	\end{enumerate}
 	\item prospective: (total PV value of all remaining pmts)
-	\item retrospective: (Value of the loan at time k) - (total PV value of payments made)
+	\item retrospective: (Value of the loan at time k) - (total FV value of payments made)
+	\begin{enumerate}
+		\item loan value*$(1+i)^k - Qs_{\angl{k}i}$
+	\end{enumerate}
 \end{enumerate}
 \subsection{Non-leveled Annuities}
 \begin{enumerate}

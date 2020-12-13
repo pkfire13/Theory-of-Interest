@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{actuarialangle}
+\begin{document}
+	
+\title{CH8 \& 9 Concepts and Definitions}
+\author{Paul Kim}
+\date{\today}
+\maketitle
+\section{Ch8}
+\subsection{spot rates and foward rates}
+\begin{enumerate}
+	\item spot rate $r_t$= no-coupon rate = annual effective interest rate for now
+\end{enumerate}
+
+\subsection{Swaps}
+\begin{enumerate}
+	\item swaps
+	\begin{enumerate}
+		\item accreting = increasing
+		\item amortizing = decreasing
+	\end{enumerate}
+\end{enumerate}
+
+
+\section{CH9}
+\subsection{Macaulay Duration and Modified duration }
+\begin{align}
+	P(i) = \sum_{t}^{max}C_t(1+i)^{-1} \nonumber \\
+	D(i, \infty) = \frac{1}{P(i)}\sum_{min}^{max}t*C_t(1+i)^{-t} \nonumber \\
+	D(i,1) = \frac{\frac{-dP}{di}}{P(i)} \nonumber \\
+	D(i,m) = \frac{\frac{-dP}{di^{(m)}}}{P(i)} \nonumber \\
+	D(i, \infty) = (1+i)D(i,1) = D(i,1)(1 + \frac{i^{(m)}}{m}) \nonumber \\
+	(Ia)_{\angl{n}i} = \frac{\ddot{a}_{\angl{n}i} - nv^n}{i} \nonumber
+\end{align}
+\subsection{Convexity}
+\begin{align}
+	C(i, \infty) \frac{1}{P(i)} \sum_{min}^{max}t^2*C_t(1+i)^{-t} \nonumber \\
+	C(i,m) = \frac{\frac{d^2P}{d(i^{(m)}2)}}{P(i)} \nonumber \\
+	C(i,1)
+\end{align}
+\end{document}
